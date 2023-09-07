@@ -1,0 +1,134 @@
+body {
+  margin: 20px;
+  padding: 25px; /* Reduced spacing */
+}
+
+.reservation-system {
+  background-color: #86575b;
+  color: white;
+  text-align: center;
+  padding: 80px; /* Adjust the percentage-based padding */
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.container {
+  background-color: #e0ffff;
+  position: relative; /* Make the container a positioning context */
+  display: flex;
+  align-items: flex-start;
+  border: 3px solid #86575b;
+  border-radius: 10px;
+  padding: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.kitchen {
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+.recption {
+  position: absolute;
+  top: 0;
+  left: 60%;
+}
+
+.enterance {
+  position: absolute; /* Position it within the container */
+  top: 0;
+  left: 0;
+}
+.sofa {
+  position: absolute; /* Position it within the container */
+  top: 0;
+  right: 0;
+}
+.sofa2 {
+  position: absolute; /* Position it within the container */
+  top: 19%;
+  right: 0;
+}
+.exit {
+  position: absolute; /* Position it within the container */
+  bottom: 0;
+  right: 0;
+}
+
+.table-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-top: 150px;
+}
+.table-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  margin-left: 200px;
+  margin-top: 150px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  border: 2px solid greenyellow;
+  background-color: #556b2f;
+  color: white;
+  cursor: pointer;
+}
+
+.table img {
+  width: 90px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  margin-bottom: 5px; /* Add spacing between image and text */
+}
+.table-group .table {
+  padding: 12px 24px; /* Adjust button padding */
+  font-size: 18px; /* Adjust button font size */
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.table-group .table:hover {
+  transform: scale(1.45); /* Slight increase in size on hover */
+  background-color: #a52a2a; /* Darker background color on hover */
+}
+.booked-button {
+  background-color: #f8f8ff; /* Light yellow color */
+}
+.booked-button.table:hover {
+  background-color: #adff2f; /* Light yellow color */
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+    color: rgb(255, 145, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+.nav-item.active {
+  border-bottom: 2px solid #6c757d;
+  border-radius: 10px;
+  background-color: aqua;
+}
+nav {
+  font-weight: bold;
+}

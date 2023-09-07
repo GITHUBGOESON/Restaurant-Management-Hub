@@ -1,0 +1,52 @@
+{
+  "MenuItems": [
+    {
+      "id": "1",
+      "itemName": "Pizza",
+      "itemDescription": "Margherita",
+      "itemPrice": "250.00",
+      "image": "pizza.jpg",
+      "selected": true
+    },
+    {
+      "id": "2",
+      "itemName": "Vadapav",
+      "itemDescription": "Spicy (Stuffed with Aloo)",
+      "itemPrice": "20.00",
+      "image": "vadapav.jpg",
+      "selected": false
+    },
+    {
+      "id": "3",
+      "itemName": "Pasta",
+      "itemDescription": "Red Sauce Pasta",
+      "itemPrice": "175.00",
+      "image": "pasta.jpg",
+      "selected": false
+    },
+    {
+      "id": "4",
+      "itemName": "Samosa",
+      "itemDescription": "Spicy (Stuffed with Aloo)",
+      "itemPrice": "20.00",
+      "image": "samosa.jpg",
+      "selected": false
+    },
+    {
+      "id": "5",
+      "itemName": "Rasgulla",
+      "itemDescription": "Sweet (Chef Special)",
+      "itemPrice": "80.00",
+      "image": "rasgulla.jpg",
+      "selected": false
+    },
+    {
+      "id": "6",
+      "itemName": "Kadhi Chawal",
+      "itemDescription": "Chef Special Dish",
+      "itemPrice": "100.50",
+      "image": "kadhichawal.jpg",
+      "selected": false
+    }
+  ]
+}

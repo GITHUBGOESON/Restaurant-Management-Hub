@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "username": "kedar.deshpande@gmail.com",
+      "password": "kedar0905"
+    },
+    {
+      "username": "user2",
+      "password": "password2"
+    }
+  ]
+}

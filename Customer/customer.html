@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg    fixed-top"
+    style="box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; color: white ;margin-top: 0px; background-color: #146EB4;">
+    <div class="container-fluid">
+      <img src="images/logo-png.png" alt="logo" width="40" height="40" style="margin-top: -10px; margin-right: 40px" />
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" id="button" aria-current="page" href="../Home/Homepage.html"
+              style="color: white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="../Home/staff.html" style="color: white;">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="customer.html" style="color: white;">Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="../MenuItems/MenuItems.html" tabindex="-1" aria-disabled="true"
+              style="color: white;">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="../Table_Reservation/Table_Reservation.html"
+              style="color: white;">Table Reservation</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <form class="d-flex" onsubmit="DoLogin(); return false;">
+            <li class="nav-item">
+              <button class="btn btn-outline-primary my-2 my-sm-0 ml-3" type="submit" style="color: white;">
+                Logout
+              </button>
+            </li>
+          </form>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Add Customer</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name-input" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name-input" name="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email-input" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email-input" name="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="number-input" class="form-label">Phone</label>
+            <input type="number" class="form-control" id="number-input" name="number" required />
+          </div>
+          <button type="button" class="btn btn-primary" onclick="create();">
+            Add Customer
+          </button>
+        </form>
+      </div>
+
+      <div class="col-md-8">
+        <div class="mb-3">
+          <div class="input-group mt-3">
+            <input type="text" class="form-control" id="search-name-input" placeholder="Search by name"
+              oninput="searchByName();" />
+          </div>
+        </div>
+        <table class="table table-bordered" id="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="custScript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

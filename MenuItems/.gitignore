@@ -1,0 +1,11 @@
+# Ignore build artifacts
+build/
+
+# Ignore sensitive configuration files
+config.ini
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore temporary files
+*.tmp

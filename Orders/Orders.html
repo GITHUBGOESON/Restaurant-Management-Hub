@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Toastr -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  <title>Orders</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg    fixed-top"
+    style="box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; color: white ;margin-top: 0px; background-color: #146EB4;">
+    <div class="container-fluid">
+      <img src="images/logo-png.png" alt="logo" width="40" height="40" style="margin-top: -10px; margin-right: 40px" />
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" id="button" aria-current="page" href="../Home/Homepage.html"
+              style="color: white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="../Home/staff.html" style="color: white;">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="../Customer/customer.html" style="color: white;">Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="../MenuItems/MenuItems.html" tabindex="-1" aria-disabled="true"
+              style="color: white;">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="../Table_Reservation/Table_Reservation.html"
+              style="color: white;">Table Reservation</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <form class="d-flex" onsubmit="DoLogin(); return false;">
+            <li class="nav-item">
+              <button class="btn btn-outline-primary my-2 my-sm-0 ml-3" type="submit" style="color: white;">
+                Logout
+              </button>
+            </li>
+          </form>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row" id="cardContainer">
+      <!-- Cards will be appended here -->
+    </div>
+
+    <button class="btn btn-primary" id="proceedToPay">Proceed To Pay</button>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

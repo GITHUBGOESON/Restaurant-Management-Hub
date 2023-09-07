@@ -1,0 +1,34 @@
+{
+  "customer": [
+    {
+      "name": "Shwetark",
+      "email": "shwetark@gmail.com",
+      "phone": "9859575949",
+      "id": 1
+    },
+    {
+      "name": "Shivkumar",
+      "email": "shiv@gmail.com",
+      "phone": "6473648595",
+      "id": 2
+    },
+    {
+      "name": "Tarun",
+      "email": "tarun@gmail.com",
+      "phone": "7289388292",
+      "id": 3
+    },
+    {
+      "name": "Sanjana",
+      "email": "sanjana@gmail.com",
+      "phone": "9087868868",
+      "id": 4
+    },
+    {
+      "name": "Kedar",
+      "email": "kedar@gmail.com",
+      "phone": "9506964094",
+      "id": 5
+    }
+  ]
+}

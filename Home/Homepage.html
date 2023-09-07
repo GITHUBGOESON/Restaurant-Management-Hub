@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="HomepageStyles.css">
+  <style>
+    #button:hover {
+      color: black;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg    fixed-top"
+    style="box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; color: white ;margin-top: 0px; background-color: #146EB4;">
+    <div class="container-fluid">
+      <img src="images/logo-png.png" alt="logo" width="40" height="40" style="margin-top: -10px; margin-right: 40px" />
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" id="button" aria-current="page" href="Homepage.html"
+              style="color: white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="staff.html" style="color: white;">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="../Customer/customer.html" style="color: white;">Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="../MenuItems/MenuItems.html" tabindex="-1" aria-disabled="true"
+              style="color: white;">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="../Table_Reservation/Table_Reservation.html"
+              style="color: white;">Table Reservation</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <form class="d-flex" onsubmit="DoLogin(); return false;">
+            <li class="nav-item">
+              <button class="btn btn-outline-primary my-2 my-sm-0 ml-3" type="submit" style="color: white;">
+                Logout
+              </button>
+
+            </li>
+          </form>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="p-5 text-center bg-light" style="margin-top: 58px;box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;">
+    <h1 class="mb-3">Bluelime Management Portal</h1>
+    <h4 class="mb-3">Gateway to Seamless Restaurant Management</h4>
+    <button class="button"><a href="../Customer/customer.html"
+        style="text-decoration: none;color: white;width: 20%;">Enter Customer Details</a></button>
+  </div>
+
+  <table>
+    <tr>
+      <td>
+
+        <div style="margin-left: 50px;">
+          <h3>Menu Management</h3>
+          <p>Streamline the process of introducing new dishes to your menu. The menu management system allows you to
+            effortlessly add details such as
+            item name, description, price, and category. Upload high-quality images to tantalize your customers' taste
+            buds and provide a visual representation
+            of the dishes.</p>
+          <button class="button"><a href="../MenuItems/MenuCard.html" style="text-decoration: none;color: white;">Menu
+              Card</a></button>
+        </div>
+
+      </td>
+      <td>
+        <img src="images/menu01.avif" class="align-right slide-in" height="300px"
+          style="margin-top: 20px;border-radius: 10px; margin-left: 300px;margin-right: 30px;box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;">
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+        <img src="images/reserve.avif" class="align-left slide-in" height="300px"
+          style="margin-top: 50px;border-radius: 10px;margin-right: 200px;margin-left: 20px;box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;">
+      </td>
+      <td>
+        <div style="margin-left: 10px;">
+          <h3>Reservation</h3>
+          <p>Welcome to our restaurant's advanced reservation system designed exclusively for administrators. With this
+            powerful tool,
+            you can efficiently manage and oversee all aspects of table reservations. This system aims to streamline the
+            reservation process,
+            ensuring a seamless and exceptional dining experience for our valued customers.</p>
+          <button class="button"><a href="../Table_Reservation/Table_Reservation.html"
+              style="text-decoration: none;color: white;">Table Reservation</a></button>
+        </div>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td>
+
+        <div style="margin-left: 50px;">
+          <h3>Billing and Payment</h3>
+          <p>Our restaurant billing and payment system simplifies the payment process, providing a convenient experience
+            for
+            both your staff and customers. As the admin, you have the authority to oversee and manage the payment
+            procedures.</p>
+          <button class="button"><a href="../Bills/bill.html" style="text-decoration: none;color: white;">Pay
+              Bill</a></button>
+          <!-- <a href="../MenuItems/MenuCard.html" class="btn btn-primary">Pay Bill</a> -->
+        </div>
+
+      </td>
+      <td>
+        <img src="images/bill.avif" class="align-right slide-in" height="300px"
+          style="margin-top: 50px;border-radius: 10px; margin-left: 200px;box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;">
+      </td>
+    </tr>
+  </table>
+
+
+
+  <div class="slider-container" style="box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;">
+    <div class="slides">
+      <div class="slide">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/italian.webp" class="card-img-top" alt="Skyscrapers" height="300px" />
+            <div class="card-body">
+              <h5 class="card-title">Italian</h5>
+              <p class="card-text">
+                If you have wondered, which is the most famous cuisine in the world? Here’s your answer! It is no
+                surprise if your favourite food includes pizza and pasta. Although, Italian food is much more than
+                cheese and pasta. It is incredibly diverse, with a few characteristics that tie it all together. It
+                includes an emphasis on fresh, local ingredients, and letting them speak for themselves without too much
+                fuss
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="col">
+          <div class="card h-1">
+            <img src="images/sushi.jpg" class="card-img-top" alt="Los Angeles Skyscrapers" height="300px" />
+            <div class="card-body">
+              <h5 class="card-title">Thai</h5>
+              <p class="card-text">With Thailand being one of the most visited countries by Indians, Thai cuisine has
+                successfully gained its popularity among the Indian masses. Spicy soups, Thai-style fried noodles, green
+                and red curries and fried rice are unique to the region. Most Thai dishes have a coconut milk base
+                adding subtle flavours. The similarity of these flavours feels homely to Indian cuisine. </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/indian.webp" class="card-img-top" alt="Los Angeles Skyscrapers" height="300px" />
+            <div class="card-body">
+              <h5 class="card-title">Indian</h5>
+              <p class="card-text">Indian cuisine consists of a great variety of food, ranging from Mughlai to Andhra,
+                from Bengali to Rajasthani to various other local cuisines ranging across different states. It is one of
+                the most varied cultured countries with umpteen dishes, each unique in its own for uses of spices and
+                herbs in several forms. In short Indian cuisine is not a single cuisine but a collection of different
+                regional cuisines; each is its own distinct Indian food.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Add more reviews here -->
+    </div>
+  </div>
+
+  <footer class="footer"
+    style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
+    <div class="container">
+      <div class="social-media">
+        <a href="#"><img src="images/insta.png" alt="Instagram"></a>
+        <a href="#"><img src="images/fb.png" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      </div>
+      <div class="address">
+        <p>Cerebrum IT Park, Kalyani Nagar, Pune</p>
+      </div>
+      <div class="copy-rights">
+        <p>&copy; 2023 Bluelime Management. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const carouselItems = document.querySelectorAll('.carousel img');
+    let currentIndex = 0;
+
+    function debounce(func, wait, immediate) {
+      var timeout;
+      return function () {
+        var context = this, args = arguments;
+        var later = function () {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+      };
+    };
+
+    const sliderImages = document.querySelectorAll('.slide-in');
+
+    function checkSlide(e) {
+
+      // loop over every image 
+      // figure out where it needs to be shown
+      // at least 50% of its height
+
+      sliderImages.forEach(sliderImage => {
+        //half way through images
+        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+        // bottom of the image
+        const imageBottom = sliderImage.offsetTop + sliderImage.height;
+        // half way in the images
+        const isHalfShown = slideInAt > sliderImage.offsetTop;
+
+        const isNoScrolledPast = window.scrollY < imageBottom;
+
+        if (isHalfShown && isNoScrolledPast) {
+          sliderImage.classList.add('active');
+        } else {
+          sliderImage.classList.remove('active');
+        }
+      })
+
+
+    }
+
+    window.addEventListener('scroll', debounce(checkSlide))
+
+
+
+    function DoLogin() {
+      window.location = "Loginpage.html";
+      return false;
+    }
+
+
+    function slideCarousel() {
+      currentIndex = (currentIndex + 1) % carouselItems.length;
+      const offset = -currentIndex * carouselItems[0].clientWidth;
+      carousel.style.transform = `translateX(${offset}px)`;
+    }
+
+    setInterval(slideCarousel, 3000); // Change logo every 3 seconds
+
+
+    const slides = document.querySelector('.slides');
+    const slideItems = document.querySelectorAll('.slide');
+    let res = 0;
+
+    function slideReviews() {
+      res = (res + 1) % slideItems.length;
+      const offset = -res * slideItems[0].clientWidth;
+      slides.style.transform = `translateX(${offset}px)`;
+    }
+
+    setInterval(slideReviews, 5000); // Change review every 5 seconds
+  </script>
+
+</body>
+
+</html>
+
+
+
+
+<!-- HTML !-->

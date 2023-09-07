@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg    fixed-top" style="box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; color: white ;margin-top: 0px; background-color: #146EB4;">
+    <div class="container-fluid" >
+      <img
+      src="images/logo-png.png"
+        alt="logo"
+        width="40"
+        height="40"
+        style="margin-top: -10px; margin-right: 40px"
+      />
+      
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" id="button" aria-current="page" href="Homepage.html" style="color: white;"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="staff.html" style="color: white;">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="../Customer/customer.html" style="color: white;">Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="button" href="../MenuItems/MenuItems.html" tabindex="-1" aria-disabled="true" style="color: white;"
+              >Menu</a
+            >
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <form class="d-flex" onsubmit="DoLogin(); return false;">
+            <li class="nav-item">
+              <button
+                class="btn btn-outline-primary my-2 my-sm-0 ml-3"
+                type="submit" style="color: white;"
+              >
+                Logout
+              </button>
+            </li>
+          </form>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      <div class="p-5 text-center bg-light" style="margin-top: 58px;box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;">
+        <h1 class="mb-3">Staff Information</h1>
+        <h4 class="mb-3">Servicing the best</h4>
+      </div>
+
+
+
+
+      <div class="row row-cols-1 row-cols-md-3" style="margin-left: 50px; margin-right: 50px;">
+
+        <div class="col mb-4">
+          <div class="card" style="margin-top: 50px;">   
+            <div class="view overlay">
+              <img class="card-img-top" src="images/01.avif" 
+                alt="Card image cap" height="400" width="200">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Chandrashekhar Samant</h4>
+              <p class="card-text">Head Chef</p>
+              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+              
+            </div>
+      
+          </div>
+        </div>
+
+
+
+        <div class="col mb-4">
+          <div class="card" style="margin-top: 50px; ">
+            <div class="view overlay">
+              <img class="card-img-top" src="images/02.avif"
+                alt="Card image cap" height="400" width="200">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Shiv</h4>
+              <p class="card-text">Junior Chief</p>
+              
+            </div>     
+          </div>
+        </div>
+
+
+
+        <div class="col mb-4">
+          <div class="card" style="margin-top: 50px;">   
+            <div class="view overlay">
+              <img class="card-img-top" src="images/03.jpg"
+                alt="Card image cap" height="400" width="200">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Shankar</h4>
+              <p class="card-text">Junior Chef</p>
+              
+            </div>   
+          </div>
+        </div>
+
+
+        <div class="col mb-4">
+          <div class="card">   
+            <div class="view overlay">
+              <img class="card-img-top" src="images/04.jpg"
+                alt="Card image cap" height="400" width="200">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Mahesh</h4>
+              <p class="card-text">Junior Chef</p>
+              
+            </div>   
+          </div>
+        </div>
+
+
+        
+
+        <div class="col mb-4">
+          <div class="card">   
+            <div class="view overlay">
+              <img class="card-img-top" src="images/05.jpg"
+                alt="Card image cap" height="400" width="200">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Nilesh</h4>
+              <p class="card-text">Junior Chef</p>
+               
+            </div>   
+          </div>
+        </div>
+
+
+        <div class="col mb-4">
+          <!-- Card -->
+          <div class="card">
+      
+            <!--Card image-->
+            <div class="view overlay">
+              <img class="card-img-top" src="images/06.jpg"
+                alt="Card image cap" height="400" width="200">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+      
+            <!--Card content-->
+            <div class="card-body">
+      
+              <!--Title-->
+              <h4 class="card-title">Bhargav</h4>
+              <!--Text-->
+              <p class="card-text">Junior Chef</p>
+              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+              
+            </div>   
+          </div>
+        </div>
+      </div>
+
+
+      <script>
+        const availabilityButton = document.getElementById("availabilityButton");
+    const availabilityText = document.getElementById("availabilityText");
+
+
+    function DoLogin() {
+        window.location = "Loginpage.html";
+        return false;
+      }
+    
+    availabilityButton.addEventListener("click", function () {
+        if (this.classList.contains("available")) {
+            this.classList.remove("available");
+            this.classList.add("not-available");
+            availabilityText.textContent = "Not Available";
+        } else {
+            this.classList.remove("not-available");
+            this.classList.add("available");
+            availabilityText.textContent = "Available";
+        }
+    });
+    
+       </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

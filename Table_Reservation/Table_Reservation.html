@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table Reservation</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" />
+  <!-- Toastr -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg    fixed-top"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; color: white ;margin-top: 0px; background-color: #146EB4;">
+      <div class="container-fluid">
+        <img src="images/logo-png.png" alt="logo" width="40" height="40"
+          style="margin-top: -10px; margin-right: 40px" />
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" id="button" aria-current="page" href="../Home/Homepage.html"
+                style="color: white;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="button" href="../Home/staff.html" style="color: white;">Staff</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="button" href="../Customer/customer.html" style="color: white;">Customer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="button" href="../MenuItems/MenuItems.html" tabindex="-1" aria-disabled="true"
+                style="color: white;">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="button" href="Table_Reservation.html" style="color: white;">Table Reservation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <br>
+  <br>
+  <br>
+
+
+  <div class="container">
+    <div class="recption">
+      <img src="./Images/reception1.png" alt="Reception" />
+    </div>
+    <div class="sofa2">
+      <img src="./Images/sofa2.png" alt="Sofa 2" />
+    </div>
+    <div class="sofa">
+      <img src="./Images/sofa.png" alt="Sofa" />
+    </div>
+    <div class="enterance">
+      <img src="./Images/door.png" alt="Entrance" />
+    </div>
+    <div class="kitchen">
+      <img src="./Images/kitchen.png" alt="Kitchen" />
+    </div>
+    <div class="exit">
+      <img src="./Images/exit.png" alt="Exit" />
+    </div>
+    <div class="table-container">
+      <div class="table-group">
+        <button class="table" id="T001">
+          <img src="./Images/table.png" alt="Table 1" />
+          Table 1
+        </button>
+        <br />
+        <button class="table" id="T002">
+          <img src="./Images/table.png" alt="Table 2" />
+          Table 2
+        </button>
+        <br />
+        <button class="table" id="T003">
+          <img src="./Images/table.png" alt="Table 3" />
+          Table 3
+        </button>
+        <br />
+        <button class="table" id="T004">
+          <img src="./Images/table.png" alt="Table 4" />
+          Table 4
+        </button>
+      </div>
+      <div class="table-group">
+        <button class="table" id="T005">
+          <img src="./Images/table.png" alt="Table 5" />
+          Table 5
+        </button>
+        <br />
+        <button class="table" id="T006">
+          <img src="./Images/table.png" alt="Table 6" />
+          Table 6
+        </button>
+        <br />
+        <button class="table" id="T007">
+          <img src="./Images/table.png" alt="Table 7" />
+          Table 7
+        </button>
+        <br />
+        <button class="table" id="T008">
+          <img src="./Images/table.png" alt="Table 8" />
+          Table 8
+        </button>
+      </div>
+    </div>
+    <div class="table-container2">
+      <div class="table-group">
+        <button class="table" id="T009">
+          <img src="./Images/table.png" alt="Table 9" />
+          Table 9
+        </button>
+        <br />
+        <button class="table" id="T010">
+          <img src="./Images/table.png" alt="Table 10" />
+          Table 10
+        </button>
+        <br />
+        <button class="table" id="T011">
+          <img src="./Images/table.png" alt="Table 11" />
+          Table 11
+        </button>
+        <br />
+        <button class="table" id="T012">
+          <img src="./Images/table.png" alt="Table 12" />
+          Table 12
+        </button>
+      </div>
+      <div class="table-group">
+        <button class="table" id="T013">
+          <img src="./Images/table.png" alt="Table 13" />
+          Table 13
+        </button>
+        <br />
+        <button class="table" id="T014">
+          <img src="./Images/table.png" alt="Table 14" />
+          Table 14
+        </button>
+        <br />
+        <button class="table" id="T015">
+          <img src="./Images/table.png" alt="Table 15" />
+          Table 15
+        </button>
+        <br />
+        <button class="table" id="T016">
+          <img src="./Images/table.png" alt="Table 16" />
+          Table 16
+        </button>
+      </div>
+
+
+    </div>
+    <div class="modal" tabindex="-1" id="bookingDialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Book Table</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label for="customer-dropdown">Select customer</label>
+            <select id="customer-dropdown"></select>
+            <br><br>
+            <p><span id="tableIdDisplayBooking"></span></p>
+            <input type="text" id="customerNameInput" class="form-control" placeholder="Selected customer appers here"
+              readonly />
+            <br>
+            <label for="mobileNumberInput">MobileNumber</label>
+            <input type="number" id="mobileNumberInput" class="form-control" placeholder="Customer's mobile number">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" id="bookTableButton">Book Table</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal" tabindex="-1" id="bookedTableInfoDialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Booked Table</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h3><span id="welcomeMessage" class="blink">Welcome! You have booked the table:</span></h3>
+            <h3><span id="tableIdDisplayInfo"></span></h3>
+            <h3><span id="customerNameDisplayInfo"></span></h3>
+            <h3><span id="mobileNumberDisplay"></span></h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-danger" id="unbook">Cancel Booking</button>
+            <p id="goToMenuMessage" class="blink" style=" margin-top: 10px;">Please go to select menu -></p>
+            <button type="button" class="btn btn-primary" id="selectMenuitems">Go to MenuItems</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script6.js"></script>
+</body>
+
+</html>

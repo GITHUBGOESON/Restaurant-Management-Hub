@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Document</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Toastr -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+  <script>
+    function DoLogin() {
+      var selectedPeople = [];
+      localStorage.setItem("selectedPeople", selectedPeople);
+
+      let em = document.getElementById("username").value;
+      let pw = document.getElementById("password").value;
+      if (em === "kedar@gmail.com" && pw === "kedar") {
+        window.location = "Homepage.html";
+      } else {
+        toastr.error("Invalid Credentials");
+      }
+    }
+
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color: rgb(224, 224, 224);">
+  <section class="vh-90">
+    <div class="container py-5 h-100"
+      style="background-color: white;border-radius: 5px 30px 5px; margin-top: 60px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+      <div class="row d-flex align-items-center justify-content-center h-100">
+        <div class="col-md-8 col-lg-7 col-xl-6">
+          <img src="images/2.jpg" class="img-fluid" alt="Phone image"
+            style="border-radius: 5px 50px 5px;box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;">
+        </div>
+        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+          <form onsubmit="return false;">
+            <!-- Email input -->
+            <div class="form-outline mb-4 fs-5">
+              <input type="email" id="username" class="form-control form-control-lg" />
+              <label class="form-label" for="form1Example13">E-mail</label>
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4 fs-5">
+              <input type="password" id="password" class="form-control form-control-lg" />
+              <label class="form-label" for="form1Example23">Password</label>
+            </div>
+
+            <div class="d-flex justify-content-around align-items-center mb-4">
+              <!-- Checkbox -->
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                <label class="form-check-label" for="form1Example3"> Remember me </label>
+              </div>
+              <a href="#!">Forgot password?</a>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" id="login-btn" class="btn btn-primary btn-lg btn-block" onclick="DoLogin()">Log
+              in</button>
+
+            <div class="divider d-flex align-items-center my-4">
+              <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+            </div>
+
+            <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!" role="button">
+              <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
+            </a>
+            <a class="btn btn-primary btn-lg btn-block" style="background-color: #fb2916;" href="#!" role="button">
+              <i class="fab fa fa-google me-2"></i>Continue with Google</a>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
